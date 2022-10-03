@@ -11,11 +11,11 @@ for(var i = 0; i<numberOfDrumbuttons; i++) {
         MakeSound(innerHTML);
            });
 }
-    document.addEventListener("keypress",function(Event){
+    document.addEventListener("keydown",function(Event){
         MakeSound(Event.key);
     })
  
-        function MakeSound("key"){
+        function MakeSound(key){
     switch (key) {
         case "w":
             var audio = new Audio('sounds/tom-1.mp3');
