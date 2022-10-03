@@ -10,9 +10,10 @@ for(var i = 0; i<numberOfDrumbuttons; i++) {
     var buttoninnerHTML = this.innerHTML;
         MakeSound(innerHTML);
            });
-    document.addEventListener("keypress",function(event){
+}
+    document.addEventListener("keypress",function(Event){
         MakeSound(Event.key);
-        )}
+    })
  
         function MakeSound("key"){
     switch (key) {
